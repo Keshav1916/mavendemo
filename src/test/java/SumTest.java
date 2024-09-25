@@ -8,6 +8,6 @@ public class SumTest {
     @Test
     public void testAdd() {
         Sum sum = new Sum();
-        assertEquals(50, sum.add(50, 50), "The sum of 50 and 50 should be 100");
+        assertEquals(100, sum.add(50, 50), "The sum of 50 and 50 should be 100");
     }
 }
