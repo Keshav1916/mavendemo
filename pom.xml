@@ -8,7 +8,6 @@
   <version>1.0</version>
 
   <name>sum</name>
-  <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
   <properties>
@@ -34,7 +33,11 @@
       <artifactId>junit-jupiter-api</artifactId>
       <scope>test</scope>
     </dependency>
-    <!-- Optionally: parameterized tests support -->
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-engine</artifactId>
+      <scope>test</scope>
+    </dependency>
     <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter-params</artifactId>
@@ -44,12 +47,10 @@
 
   <build>
     <plugins>
-      <!-- clean lifecycle -->
       <plugin>
         <artifactId>maven-clean-plugin</artifactId>
         <version>3.4.0</version>
       </plugin>
-      <!-- default lifecycle, jar packaging -->
       <plugin>
         <artifactId>maven-resources-plugin</artifactId>
         <version>3.3.1</version>
@@ -81,7 +82,6 @@
         <artifactId>maven-deploy-plugin</artifactId>
         <version>3.1.2</version>
       </plugin>
-      <!-- site lifecycle -->
       <plugin>
         <artifactId>maven-site-plugin</artifactId>
         <version>3.12.1</version>
