@@ -1,7 +1,6 @@
 node {
     def mvnHome
     stage('Preparation') {
-        // Checkout the repository from the main branch
         git url: 'https://github.com/otaku-codes/mavendemo.git', branch: 'main'
         mvnHome = tool 'MAVEN3'
     }
