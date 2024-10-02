@@ -97,7 +97,7 @@
             <reports>
               <report>dependencies</report>
               <report>summary</report>
-              <report>license</report>
+              <report>licenses</report>
               <report>scm</report>
             </reports>
           </reportSet>
