@@ -2,7 +2,7 @@ node {
     def mvnHome
     stage('Preparation') {
         git url: 'https://github.com/otaku-codes/mavendemo.git', branch: 'main'
-        mvnHome = tool 'MAVEN3'
+        mvnHome = tool 'Maven'
     }
     stage('Build') {
         withEnv(["MVN_HOME=$mvnHome"]) {
